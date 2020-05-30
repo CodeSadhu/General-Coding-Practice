@@ -10,19 +10,16 @@ int main(){
         vec.push_back(element);
     }
     sort(vec.begin(), vec.end());
-    // cout<<"Sorted Vector: ";
-    // for (int i = 0; i < int(vec.size()); ++ i)
-    //     cout<<vec.at(i)<<" ";
     cout<<"\nEnter key: ";
     cin>>key;
-    high = int(vec.size());
-    while (low < high){
+    high = vec.size() - 1;
+    while (low <= high) {
         mid = (low + high) / 2;
         if (vec[mid] == key){
             cout<<"\nFound!";
             break;
         }
-        if (vec[mid] < key)
+        else if (vec[mid] > key)
             high = mid - 1;
         else low = mid + 1;
     }
