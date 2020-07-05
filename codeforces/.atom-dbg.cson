@@ -1,0 +1,12 @@
+"temp.exe":
+	debugger: "dbg-gdb"
+	path: "temp.exe"
+
+"temp.exe 2":
+	path: "temp.exe"
+
+"temp.cpp":
+	path: "temp.cpp"
+
+"temp.exe 3":
+	path: "temp.exe"
